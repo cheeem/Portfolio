@@ -1,0 +1,116 @@
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Poppins:wght@400;600;800&display=swap');
+
+* {
+
+  /* box sizing */
+  box-sizing: border-box;
+
+  /* margin and padding reset */
+  margin: 0;
+  padding: 0;
+
+  /* universal font styles */
+  font-family: 'Montserrat', sans-serif;
+  color: var(--dark);
+  text-decoration: none;
+  list-style: none;
+
+}
+
+:root {
+
+  /* neutral palette */
+  --white: hsl(0,0%,100%);
+  --lightgray: hsl(0,0%,95%);
+  --gray: hsl(0,0%,90%);
+  --dark: hsl(243,17%,22%);
+  --dark-alt: #3f3d56;
+
+  /* color palette */
+  --purple: hsl(243,100%,69%);
+  --light-pink: hsl(0,92%,85%);
+  --pink: hsl(349,100%,70%);
+
+  /* color utilities */
+  --primary: var(--white);
+  --secondary: var(--dark);
+  --highlight: var(--purple);
+  --highlight3: var(--light-pink);
+  --highlight2: var(--pink);
+
+  /* page sizing */
+  --font-size: 1vw;
+  --padding-y: 1.25rem; 
+  --padding-x: 15vw;
+  --nav-font-size: max(0.8rem, 1vw);
+  --nav-height: calc(var(--nav-font-size) * 4.25);
+  --page-height: 100vh;
+
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+.page {
+  position: relative;
+
+  min-height: var(--page-height);
+
+  padding: 0 var(--padding-x);
+  padding-top: var(--nav-height);
+}
+
+.behind {
+  z-index: -1;
+}
+
+span {  
+  position: relative;
+}
+
+span::before {
+  z-index: -1;
+
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+
+  height: 15%;
+  width: 100%;
+
+  background-color: var(--highlight);
+
+  content: "";
+}
+
+h2 {
+  z-index: -10;
+
+  position: absolute;
+  
+  font-size: 20vw;
+  color: var(--lightgray);
+}
+
+button {
+  padding: 0.75em 2em;
+
+  background-color: var(--primary);
+
+  font-weight: 500;
+  font-size: var(--font-size);
+  color: var(--secondary);
+
+  border: 0.2em solid var(--secondary);
+  border-radius: 0.5em;
+
+  transition: scale 0.2s;
+
+  cursor: pointer;
+}
+
+button:hover {
+  scale: 1.02;
+}
