@@ -5,6 +5,7 @@
   import Nav from './Nav.svelte'
 
   import Home from './pages/Home.svelte'
+  import MyWork from './pages/MyWork.svelte'
 
   const page_links: PageLink[] = [
     { label: `Home`, href: `#home`, },
@@ -23,12 +24,16 @@
   <main>
 
     <Home />
+    <MyWork />
   
   </main>
 
 <style>
 
   main {
+    display: grid;
+    gap: 50vh;
+
     font-size: var(--font-size);
   }
   

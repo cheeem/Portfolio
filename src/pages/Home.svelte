@@ -17,15 +17,19 @@
     <HomeGraphic />
 
     <div class="header">
-      <h4> Jackson Werner </h4> 
+      <h4> Jackson Werner • UI/UX • SWE </h4> 
       <h1> Let's Build Something </h1>
       <div class="cta">
         <h1 class={view && `view`}
           use:viewport
           on:viewportEnter={() => view = true}
         > <span>Incredible</span> </h1> 
-        <button> <a href="#my-work"> 💻 See My Work </a> </button>
-        <button> <a href="#contact"> 📧 Contact Me </a> </button>
+        <a href="#my-work">
+          <button>  💻 See My Work</button>
+        </a>
+        <a href="#contact"> 
+          <button> 📧 Contact Me </button> 
+        </a>
       </div>
     </div>
 
@@ -44,7 +48,7 @@
 
     height: 100%;
 
-    padding-top: 20vh;
+    padding-top: 17.5vh;
   }
 
   h2 {
@@ -59,6 +63,7 @@
   .header {
     position: sticky;
     top: calc(var(--nav-height) + 10vh);
+    bottom: 0;
 
     font-size: 1.5em;
   }
@@ -96,11 +101,12 @@
     margin-bottom: 0.5em;
   }
 
-  button:first-of-type {
-    background-color: var(--highlight);
+  button {
+    width: 100%;
   }
 
-  button:first-of-type a {
+  a:first-of-type button {
+    background-color: var(--highlight);
     color: var(--primary);
   }
 

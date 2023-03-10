@@ -90,6 +90,7 @@ h2 {
 
   position: absolute;
   
+  white-space: nowrap;
   font-size: 20vw;
   color: var(--lightgray);
 }
