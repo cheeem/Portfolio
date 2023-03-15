@@ -27,6 +27,17 @@
   --dark: hsl(243,17%,22%);
   --dark-alt: #3f3d56;
 
+  /* neutral opacity palette */ 
+  --dark-1: hsla(243,17%,22%, 0.1);
+  --dark-2: hsla(243,17%,22%, 0.2);
+  --dark-3: hsla(243,17%,22%, 0.3);
+  --dark-4: hsla(243,17%,22%, 0.4);
+  --dark-5: hsla(243,17%,22%, 0.5);
+  --dark-6: hsla(243,17%,22%, 0.6);
+  --dark-7: hsla(243,17%,22%, 0.7);
+  --dark-8: hsla(243,17%,22%, 0.8);
+  --dark-9: hsla(243,17%,22%, 0.9);
+
   /* color palette */
   --purple: hsl(243,100%,69%);
   --light-pink: hsl(0,92%,85%);
